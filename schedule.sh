@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+import base64
+
+print("| image=iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAsQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIXSURBVEiJrdVdaI5hGAfw3+wtX0uZj9JygtlYaWmNjDbGkRMjDhwgSTm3pEbEIeUMKYaa5EDKkZneVooVJxysCVMiGfLVCHHwXO/2eL3Tu49/3XVf/+v/3P/nuq/7uR8KY0GM8fIF0YzuGM3j4EGmgEEDjqbmXWPk/zI4ieX4KSm1O/idWBPz0fAZPMD+UtREaS24jOn4iMl4ib1j4C9iO/oymIMXqaqu41LMd4yD78fcQj3oRf0E8BjuQQMOjCQaIxqQzRm8ljRlIlHDcAXPcHuCDVbDpDyyAll04lBwhyPORr4YzRDyDSpDtAHrglsbcTbyxWhGNHiE2nibjuA6Iq6NfDGaIeQf08+4g6kp4WOUYzDyUpos5uO7pIf9+PG/CupRJzlRx4M7FnFd5HOah9iHM/gV8TzcwjZ8xWB+BR9Qja0YCG4g4urIwzTJvr/HxtTznTiNKziL+9CEIynRUjTGIrnFGoPPoRI3FcZCzMZd/t2iGrRLLqrzwV2IuD3ywvBqgcXrQ/8NT7Eo32Cm5G65Fm8BsyLujXyOe4Nl2B3cCpzAFnzBK5Rn8Dtl0INVWI+24NqwSXKaeoLrl2xZF1qxBCuxGW9DUxVVqJB0vqxAySOhDPck/4BSHJRc+zlU4QaUBNESpU4p0uBULLwrxqe8xc9hD/pK8p8cJZok38lzyZ4vlhycVjxhuILxohIzJL15l078AaFVj6ncOonnAAAAAElFTkSuQmCC")
+
+print("---")
+
+with open("res/schedule.png","rb") as image_file:
+    schedule_str = base64.b64encode(image_file.read())
+    print("| image={}".format(schedule_str))

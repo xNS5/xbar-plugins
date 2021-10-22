@@ -14,10 +14,11 @@ import darkdetect
 
 if darkdetect.isLight():
     with open("res/class-open-file.png", "rb") as black:
-        print("| image={}".format(base64.b64encode(black.read()).decode("utf-8")))
+         print("| image={}".format(base64.b64encode(black.read()).decode("utf-8")))
 else:
-    with open("res/class-open-file-white.png", "rb") as white:
-        print("| image={}".format(base64.b64encode(white.read()).decode("utf-8")))
+     with open("res/class-open-file-white.png", "rb") as white:
+         print("| image={}".format(base64.b64encode(white.read()).decode("utf-8")))
+
 
 print("---")
 
